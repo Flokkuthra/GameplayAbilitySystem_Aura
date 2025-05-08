@@ -30,12 +30,15 @@ public:
 
 	UPROPERTY(BlueprintReadOnly, ReplicatedUsing= OnRep_MaxHealth, Category = "Vital Attributes")
 	FGameplayAttributeData MaxHealth;
+	ATTRIBUTE_ACCESSORS(UAuraAttributeSet, MaxHealth);
 
 	UPROPERTY(BlueprintReadOnly, ReplicatedUsing= OnRep_Magick, Category = "Vital Attributes")
 	FGameplayAttributeData Magick;
+	ATTRIBUTE_ACCESSORS(UAuraAttributeSet, Magick);
 
 	UPROPERTY(BlueprintReadOnly, ReplicatedUsing= OnRep_MaxMagick, Category = "Vital Attributes")
 	FGameplayAttributeData MaxMagick;
+	ATTRIBUTE_ACCESSORS(UAuraAttributeSet, MaxMagick);
 
 	UFUNCTION()
 	void OnRep_Health(const FGameplayAttributeData& OldHealth) const;
